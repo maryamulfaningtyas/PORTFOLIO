@@ -1,0 +1,280 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.nav {
+  background-color: #fff; /* Set background color */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add some shadow for better visibility */
+  padding: 10px 0; /* Add padding */
+  z-index: 1000; /* Ensure it's above other elements */
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+.nav-link {
+  color: #000; /* Set default link color */
+  transition: transform 0.3s ease; /* Smooth transformation */
+}
+
+.nav-link:hover {
+  color: #000; /* Maintain text color on hover */
+  transform: scale(1.1); /* Enlarge the element on hover */
+}
+
+/* Optional: active link styling */
+.nav-link.active {
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* Ensure the icons and text are aligned properly */
+.nav-link i {
+  margin-right: 5px; /* Space between icon and text */
+}
+
+.hero .container {
+  max-width: 80%;
+  margin: auto;
+  margin-top: 150px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 1.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.logo a {
+    color: black;
+    text-decoration:none ;
+}
+.hero {
+  box-sizing: border-box;
+  margin-top: 200px;
+}
+.hero-name {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0.5rem 0 1rem;
+}
+.hero-name span {
+  color: gray;
+}
+
+.pre-title {
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  color: var(black);
+  position: relative;
+  padding-left: 40px;
+  width: fit-content;
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+.heroimg {
+  width: 100%;
+  max-width: 500px;
+  margin-top: -120px;
+}
+.hero-name {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 60px;
+  margin-top: -20px;
+}
+
+.hero .container p {
+  font-size: 20px;
+  text-align: justify;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.social-icon {
+  width: 25px;
+  height: 30px;
+  transition: transform 0.3s;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+}
+
+/* education */
+.pendidikan {
+  box-sizing: border-box;
+  margin-top: 150px;
+}
+
+/* TEKNOLOGI */
+
+.button1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.technology {
+  box-sizing: border-box;
+  margin-top: 150px;
+  padding-bottom: 80px;
+}
+
+.technology .container {
+  max-width: 80%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.technology .container .tec1 {
+  width: 250px;
+  height: 50px;
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  border-radius: 8px;
+}
+
+.tec2 {
+  width: 610px;
+  height: 150px;
+  margin-top: 30px;
+  border: none;
+}
+
+.tollsicon {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.card-body img {
+  max-width: 100px;
+}
+
+@media (max-width: 768px) {
+  .tollsicon {
+    width: 50px;
+  }
+  .technology .container .tec1 {
+    margin-top: 0px;
+  }
+}
+
+/* Contact section styles */
+.contact {
+  margin-top: 110px;
+  margin-bottom: 30px;
+}
+
+.contact .container {
+  max-width: 80%;
+}
+
+.contact .card-body {
+  padding: 1.5rem;
+}
+
+.contact .card-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.contact .card-text {
+  margin-bottom: 15px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.social-icon {
+  width: 25px;
+  height: 30px;
+  transition: transform 0.3s;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+}
+
+.contact .container .cimg {
+  width: 100%;
+  max-width: 250px;
+  margin-top: -55px;
+  margin-left: 150px;
+}
+.contact .container .c1 {
+  margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+  .contact .container {
+    margin-top: 30px;
+  }
+  .social-icon {
+    margin-bottom: 15px;
+  }
+}
+
+/* footer */
+.footer .container {
+  max-width: 70%;
+}
+
+/* footer */
+.footer .container {
+  margin-top: 30px;
+  max-width: 70%;
+}
+
+/* CSS Default */
+/* Tulis CSS default di sini */
+
+/* Media queries untuk layar dengan lebar maksimum 768px */
+@media (max-width: 768px) {
+  /* Tulis CSS khusus untuk layar dengan lebar maksimum 768px di sini */
+  .nav {
+    padding: 5px 0; /* Ubah padding untuk navbar pada layar kecil */
+  }
+
+  .hero .container {
+    margin-top: 100px; /* Ubah margin top pada hero section untuk layar kecil */
+  }
+
+  .hero .heroimg {
+    margin-top: -80px; /* Ubah margin top pada gambar hero untuk layar kecil */
+  }
+
+  .hero-name {
+    font-size: 40px; /* Ubah ukuran font hero name untuk layar kecil */
+  }
+
+  .social-icon {
+    width: 20px; /* Ubah ukuran ikon media sosial untuk layar kecil */
+    height: 25px;
+  }
+
+  .contact .container .cimg {
+    max-width: 200px; /* Ubah lebar maksimum gambar kontak untuk layar kecil */
+    margin-top: -35px; /* Ubah margin top pada gambar kontak untuk layar kecil */
+    margin-left: 100px; /* Ubah margin left pada gambar kontak untuk layar kecil */
+  }
+}
+
+/* Media queries untuk layar dengan lebar maksimum 576px */
+@media (max-width: 576px) {
+  /* Tulis CSS khusus untuk layar dengan lebar maksimum 576px di sini */
+}
